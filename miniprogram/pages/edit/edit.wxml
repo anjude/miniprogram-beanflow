@@ -1,0 +1,14 @@
+<page>
+    <form>
+        <view class="cu-form-group">
+            <textarea maxlength="-1" bindinput="contentInput" placeholder="总得写点什么..." value="{{infoForm.content}}"></textarea>
+        </view>
+        <view class="cu-form-group">
+            <view class="title">是否公开</view>
+            <switch bindchange="changePublic" class="theme-color radius sm" checked="{{infoForm.isPublic}}"></switch>
+        </view>
+    </form>
+    <view class="padding flex flex-direction">
+        <button bind:tap="submitInfo" class="cu-btn bg-theme lg">发布</button>
+    </view>
+</page>

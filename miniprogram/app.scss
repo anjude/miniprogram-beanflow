@@ -1,0 +1,16 @@
+/**app.wxss**/
+@import "assets/style/animation.scss";
+@import "assets/style/icon.scss";
+@import "assets/style/iconfont.scss";
+@import "assets/style/main.scss";
+@import "assets/style/custom.scss";
+
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+} 

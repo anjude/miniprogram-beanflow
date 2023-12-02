@@ -1,0 +1,126 @@
+// 项目中的自定义样式
+page {
+  --theme: #07C160;
+  --blue: #2673dd;
+  --yellow: #ffbb00;
+  --red: #ee4d2d;
+  --theme-bg: #f1f1f1;
+  --allow: #39b54a;
+  --warn: #fbbd08;
+  --danger: #e54d42;
+  --link: #0081ff;
+  --tip: #8799a3;
+  --black: #333333;
+  --white: #ffffff;
+}
+
+.link {
+  color: #0077cc;
+}
+
+.text-darkgray,
+.line-darkgray,
+.lines-darkgray {
+  color: var(--darkgray);
+}
+
+.aperture {
+  animation: aperture-ani 2s linear infinite;
+}
+
+@keyframes aperture-ani {
+  0% {
+    box-shadow: 0 0 0px var(--blue)
+  }
+
+  25% {
+    box-shadow: 0 0 10px var(--blue)
+  }
+
+  50% {
+    box-shadow: 0 0 20px var(--blue)
+  }
+
+  75% {
+    box-shadow: 0 0 10px var(--blue)
+  }
+
+  100% {
+    box-shadow: 0 0 0px var(--blue)
+  }
+}
+
+
+view,
+text {
+  word-break: break-all
+}
+
+.hover-class {
+  opacity: 0.9;
+  background: #f6f6f6;
+}
+
+.full-height {
+  height: 100vh;
+}
+
+.bg-theme-bg {
+  background-color: var(--theme-bg);
+  color: var(--black);
+}
+
+.bg-theme {
+  background-color: var(--theme);
+  color: var(--white);
+}
+
+.bg-allow {
+  background-color: var(--allow);
+  color: var(--white);
+}
+
+.bg-warn {
+  background-color: var(--warn);
+  color: var(--white);
+}
+
+.bg-danger {
+  background-color: var(--danger);
+  color: var(--white);
+}
+
+.text-theme {
+  color: var(--theme);
+}
+
+.text-allow {
+  color: var(--allow);
+}
+
+.text-warn {
+  color: var(--warn);
+}
+
+.text-danger {
+  color: var(--danger);
+}
+
+.text-tip {
+  color: var(--tip);
+}
+
+.text-link {
+  color: var(--link);
+}
+
+.flex-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.scroll-y {
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+}

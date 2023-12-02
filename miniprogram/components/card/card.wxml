@@ -1,0 +1,13 @@
+<view class="cu-card padding no-card bg-white">
+    <view class="content">
+        <view class="desc">
+            <view class="text-content"> {{info.content}}</view>
+            <view class="flex justify-between align-center padding-top-sm">
+                <view class="text-right">
+                    <view wx:if="{{info.isPublic}}" class="cu-tag bg-green light sm round">{{info.likeNum}} 点赞</view>
+                    <view class="cu-tag bg-orange light sm round">{{info.isPublic?'公开':'私密'}}</view>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>

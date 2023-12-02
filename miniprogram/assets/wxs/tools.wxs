@@ -1,0 +1,33 @@
+/* eslint-disable */
+var formatTime = function (date) {
+    var date = getDate(getDate(date * 1000)); //返回当前时间对象
+    // var date = getDate(getDate(date) - 1000 * 60 * 60 * 8); //返回当前时间对象
+    var year = date.getFullYear();
+    var month = fixz(date.getMonth() + 1);
+    var day = fixz(date.getDate());
+  
+    var hour = fixz(date.getHours());
+    var minute = fixz(date.getMinutes());
+    var second = fixz(date.getSeconds());
+  
+    return [month, day].join("-") + " " + [hour, minute].join(":");
+  };
+  
+  var fixz = function (num) {
+    if (num < 10) {
+      return "0" + num;
+    }
+    return num;
+  };
+  
+  var getUserId = function (openid) {
+    if (!openid) { return "nobody" }
+    var len = openid.length
+    return openid.substring(len - 10, len);
+  }
+  
+  module.exports = {
+    formatTime: formatTime,
+    getUserId: getUserId,
+  };
+  

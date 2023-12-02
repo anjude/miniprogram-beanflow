@@ -1,0 +1,30 @@
+<wxs module="common" src="../../../assets/wxs/tools.wxs"></wxs>
+<page>
+    <card info="{{note}}"></card>
+    <view class="cu-form-group margin-top">
+        <textarea maxlength="-1" bindinput="contentInput" placeholder="总得写点什么..." value="{{addCommentContent}}"></textarea>
+        <button bind:tap="onAddComment" class="cu-btn bg-green shadow">添加留言</button>
+    </view>
+    <view wx:for="{{commentList}}" wx:key="index">
+        <view data-id="{{item.id}}" class="cu-card padding no-card bg-white margin-sm">
+            <view class="content">
+                <view class="flex justify-between">
+                    <view class="title">{{common.getUserId(item.openid)}} 说：</view>
+                    <view class="right">{{common.formatTime(item.updateTime)}}</view>
+                </view>
+                <view class="desc">
+                    <view class="text-content"> {{item.content}}</view>
+                </view>
+            </view>
+        </view>
+    </view>
+    <view class="padding"></view>
+
+    <view class="tabbar">
+        <view class="editor flex-container bg-white" bindtap="onLike">
+            <view class="">
+                <text catchtap="onLike" class="iconfont icon-thumb-up-line {{note.liked ? 'text-theme' : ''}}"></text>
+            </view>
+        </view>
+    </view>
+</page>

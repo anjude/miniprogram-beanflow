@@ -1,0 +1,22 @@
+
+.tabbar {
+    height: 70rpx;
+    position: fixed;
+    bottom: 30rpx;
+    margin-left: calc(50% - 100rpx);
+    z-index: 1000;
+
+    .editor {
+        position: relative;
+        top: 0rpx;
+        left: 50rpx;
+        height: 70rpx;
+        width: 70rpx;
+        border-radius: 50%;
+        box-shadow: 0 0 10rpx rgba(0, 0, 0, 0.1);
+
+        .icon-pencil-fill {
+            font-size: 40rpx;
+        }
+    }
+}

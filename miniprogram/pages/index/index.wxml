@@ -1,0 +1,9 @@
+<page>
+    <view wx:for="{{noteList}}" wx:key="index" class="margin-sm radius">
+        <card bind:tap="onDetail" bind:longpress="onDel" data-id="{{item.id}}" info="{{item}}"></card>
+    </view>
+    <view class="padding"></view>
+    <view bindtap="onEdit" class="flex-container edit-btn shadow-lg">
+        <text class="iconfont icon-pencil-fill"></text>
+    </view>
+</page>

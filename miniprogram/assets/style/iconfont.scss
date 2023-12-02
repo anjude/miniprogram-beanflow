@@ -1,0 +1,67 @@
+@font-face {
+  font-family: "iconfont";
+  /* Project id 3393515 */
+  src: url('//at.alicdn.com/t/font_3393515_5vddvdbhdzx.woff2?t=1653971276471') format('woff2'),
+    url('//at.alicdn.com/t/font_3393515_5vddvdbhdzx.woff?t=1653971276471') format('woff'),
+    url('//at.alicdn.com/t/font_3393515_5vddvdbhdzx.ttf?t=1653971276471') format('truetype');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-up-circle:before {
+  content: "\e786";
+}
+
+.icon-add-circle:before {
+  content: "\e664";
+}
+
+.icon-chat-2-line:before {
+  content: "\e700";
+}
+
+.icon-more-line:before {
+  content: "\e8e4";
+}
+
+.icon-qr-code-line:before {
+  content: "\e728";
+}
+
+.icon-share-box-fill:before {
+  content: "\e8b5";
+}
+
+.icon-thumb-up-line:before {
+  content: "\e898";
+}
+
+.icon-thumb-up-fill:before {
+  content: "\e8ae";
+}
+
+.icon-thumb-down-fill:before {
+  content: "\e8e1";
+}
+
+.icon-thumb-down-line:before {
+  content: "\e8f2";
+}
+
+.icon-more-fill:before {
+  content: "\e8cb";
+}
+
+.icon-indent-increase:before {
+  content: "\e785";
+}
+
+.icon-pencil-fill:before {
+  content: "\e70e";
+}

@@ -1,0 +1,21 @@
+{
+  "pages": ["pages/index/index","pages/edit/edit","pages/info/info","pages/info/detail/detail"],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#ffffff",
+    "navigationBarTitleText": "豆流",
+    "navigationBarTextStyle": "black",
+    "enablePullDownRefresh": false,
+    "onReachBottomDistance": 10,
+    "backgroundColor": "#f1f1f1"
+  },
+  "resizable": true,
+  "networkTimeout": {
+    "request": 15000,
+    "downloadFile": 15000
+  },
+  "usingComponents": {
+  },
+  "lazyCodeLoading": "requiredComponents",
+  "sitemapLocation": "sitemap.json"
+}

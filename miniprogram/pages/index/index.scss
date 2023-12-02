@@ -1,0 +1,21 @@
+.index-container {
+    width: 100%;
+    height: 100vh;
+}
+
+.edit-btn {
+    height: 50px;
+    width: 50px;
+    position: fixed;
+    bottom: 60rpx;
+    right: 50rpx;
+    border-radius: 50%;
+    background: var(--theme);
+    z-index: 999;
+    box-shadow: 0 0 10rpx rgba(0, 0, 0, 0.1);
+}
+
+.edit-btn text {
+    color: white;
+    font-size: 30px !important;
+}
